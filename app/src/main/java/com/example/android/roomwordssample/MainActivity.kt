@@ -34,10 +34,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 class MainActivity : AppCompatActivity() {
 
 
-
-
-
-
     private val newWordActivityRequestCode = 1
     private lateinit var wordViewModel: WordViewModel
 
@@ -79,11 +75,8 @@ class MainActivity : AppCompatActivity() {
                 Unit
             }
         } else {
-            Toast.makeText(
-                    applicationContext,
-                    R.string.empty_not_saved,
-                    Toast.LENGTH_LONG
-            ).show()
+            Toast.makeText(applicationContext, R.string.empty_not_saved, Toast.LENGTH_LONG).show()
         }
     }
 }
+

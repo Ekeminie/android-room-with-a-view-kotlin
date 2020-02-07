@@ -47,7 +47,7 @@ limitations under the License. -->
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/save_btn" />
 
 <!--    <Button-->
 <!--        android:id="@+id/button_save"-->
@@ -74,6 +74,14 @@ limitations under the License. -->
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save"
+        app:layout_constraintEnd_toEndOf="@+id/linedEditText"
+        app:layout_constraintStart_toStartOf="@+id/linedEditText"
+        app:layout_constraintTop_toBottomOf="@id/editText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
